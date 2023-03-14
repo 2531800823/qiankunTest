@@ -14,7 +14,6 @@
     "clear": "rimraf node_modules"
   },
   "dependencies": {
-    "global_store": "workspace:^1.0.0",
     "global_utils": "workspace:^1.0.0",
     "qiankun": "^2.10.2",
     "react": "^17.0.0",

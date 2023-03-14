@@ -6,8 +6,10 @@ importers:
     specifiers:
       antd: ^5.3.0
       concurrently: ^7.6.0
+      global_store: workspace:^1.0.0
     dependencies:
       antd: 5.3.0
+      global_store: link:lib/global_store
     devDependencies:
       concurrently: 7.6.0
 
@@ -137,7 +139,6 @@ importers:
       css-loader: ^6.7.2
       dotenv: ^16.0.3
       dotenv-webpack: ^8.0.1
-      global_store: workspace:^1.0.0
       global_utils: workspace:^1.0.0
       html-webpack-plugin: ^5.5.0
       mini-css-extract-plugin: ^2.7.2
@@ -167,7 +168,6 @@ importers:
       webpack-merge: ^5.8.0
     dependencies:
       '@reduxjs/toolkit': 1.9.3_3m5k4ry2nwm36zz5ojtujpfkvq
-      global_store: link:../../lib/global_store
       global_utils: link:../../lib/utils
       qiankun: 2.10.2
       react: 17.0.2
@@ -244,7 +244,6 @@ importers:
       css-loader: ^6.7.2
       dotenv: ^16.0.3
       dotenv-webpack: ^8.0.1
-      global_store: workspace:^1.0.0
       global_utils: workspace:^1.0.0
       html-webpack-plugin: ^5.5.0
       mini-css-extract-plugin: ^2.7.2
@@ -274,7 +273,6 @@ importers:
       webpack-merge: ^5.8.0
     dependencies:
       '@reduxjs/toolkit': 1.9.3_3m5k4ry2nwm36zz5ojtujpfkvq
-      global_store: link:../../lib/global_store
       global_utils: link:../../lib/utils
       qiankun: 2.10.2
       react: 17.0.2

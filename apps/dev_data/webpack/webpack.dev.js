@@ -17,7 +17,7 @@ const config = {
   //   ignored: /node_modules/,
   // },
   devServer: {
-    hot: true, // 开启 hrm
+    hot: true, // 开启 hmr
     open: true,
     compress: true, // 开启 gzip
     historyApiFallback: true, // 使用 history 模式

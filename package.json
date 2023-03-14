@@ -9,11 +9,11 @@
     "dev2": "pnpm -F dev_data run dev",
     "dev3": "pnpm -F app_data run dev",
     "dev4": "pnpm -F global_store run dev",
-    "build": "concurrently npm:build",
-    "build:1": "pnpm -F main_app run build",
-    "build:2": "pnpm -F dev_data run build",
-    "build:3": "pnpm -F app_data run build",
-    "build-utils": "concurrently npm:build:*",
+    "build": "concurrently npm:build:a*",
+    "build:main": "pnpm -F main_app run build",
+    "build:a2": "pnpm -F dev_data run build",
+    "build:a3": "pnpm -F app_data run build",
+    "build-utils": "concurrently npm:build:global_*",
     "build:global_utils": "pnpm -F global_utils run build",
     "build:global_store": "pnpm -F global_store run build"
   },
@@ -21,7 +21,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "antd": "^5.3.0"
+    "antd": "^5.3.0",
+    "global_store": "workspace:^1.0.0"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"
