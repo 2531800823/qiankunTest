@@ -1,0 +1,43 @@
+{
+  "name": "global_utils",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "module": "dist/es/index.js",
+  "main": "dist/cjs/index.cjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/es/index.js",
+      "default": "./dist/cjs/index.cjs",
+      "require": "./dist/cjs/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "rollup -c",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@types/node": "^18.11.13",
+    "rollup": "^3.18.0",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "pubsub-js": "^1.9.4"
+  }
+}
