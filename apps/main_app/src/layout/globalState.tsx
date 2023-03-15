@@ -1,14 +1,13 @@
 import React, { FC, useEffect, useState } from "react";
 import { initGlobalState } from "qiankun";
 import { Button, Space } from "antd";
-import { useAppDispatch, useAppSelector, store } from "global_store";
+import {  useAppSelector } from "global_store";
 interface GlobalStateProps {}
-const { onGlobalStateChange, setGlobalState, offGlobalStateChange } =
+const { onGlobalStateChange, setGlobalState } =
   initGlobalState({
     list: [1, 2, 3, 4],
     name: "liu",
     age: 18,
-    store,
   });
 
 const GlobalState: FC<GlobalStateProps> = (props) => {

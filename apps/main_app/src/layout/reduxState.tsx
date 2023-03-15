@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { Button, Space } from "antd";
 import {
   useAppSelector,
@@ -12,7 +12,7 @@ interface ReduxStateProps {}
 const ReduxState: FC<ReduxStateProps> = (props) => {
   const {} = props;
   const dispatch = useAppDispatch();
-  const store = useAppSelector((a1) => a1.counter);
+  const store = useAppSelector((v) => v.counter);
 
   const hanldeIncrement = () => {
     dispatch(increment());

@@ -20,7 +20,6 @@ const MainLayout: FC = () => {
   }, []);
 
   const hanldeAddSubApp = () => {
-    // TODO  为什么直接就加载
     appLoad.current = loadMicroApp({
       name: "app_data",
       entry: process.env.ENV === "dev" ? "//localhost:8102" : "/child/app_data",
