@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 import "./global.scss";
 import "./localTest";
 import App from "./App";
-import { Provider } from "react-redux";
-import { store } from "global_store";
+import { store,Provider } from "global_store";
 
 /**
  * bootstrap 只会在微应用初始化的时候调用一次，下次微应用重新进入时会直接调用 mount 钩子，不会再重复触发 bootstrap。

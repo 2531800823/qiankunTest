@@ -1,6 +1,5 @@
-import { store } from "global_store";
+import { store,Provider } from "global_store";
 import React from "react";
-import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import Page from "./pages";
 import { staticAppRoute } from "./routers";
